@@ -1,6 +1,6 @@
 package task;
 import java.util.Scanner;
-public class Task19_08 {
+public class NumString {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -22,3 +22,4 @@ public class Task19_08 {
 	}
 
 }
+
