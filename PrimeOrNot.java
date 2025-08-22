@@ -1,0 +1,36 @@
+package task;
+import java.util.Scanner;
+public class PrimeOrNot {
+	 boolean isprime(int n) {
+		if(n<=1) {
+			return false;
+		}
+		if(n==2) {
+			return true;
+		}
+		for(int i=2;i<=Math.sqrt(n);i++) {
+			if(n%i==0) {
+				return false;
+			}
+		}
+		return true;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		PrimeOrNot obj=new PrimeOrNot();
+		System.out.println("Enter the number:");
+		int n=sc.nextInt();
+		if(obj.isprime(n)) {
+			System.out.println(n+" is a prime number");
+		}
+		else {
+			System.out.println(n+" is not a prime number");
+		}
+		sc.close();
+	}
+	
+
+}

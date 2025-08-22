@@ -17,6 +17,7 @@ public class Relationaloperator {
 		System.out.println(x<=y);
 		System.out.println(x==y);
 		System.out.println(x!=y);
+		sc.close();
 		
 
 	}
